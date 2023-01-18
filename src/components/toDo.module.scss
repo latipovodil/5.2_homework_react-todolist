@@ -1,0 +1,242 @@
+body {
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button{
+  cursor: pointer;
+}
+
+.display_none {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.548);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.315);
+}
+
+.list {
+  height: 65vh;
+  background-color: #272727;
+  border-radius: 20px;
+  width: 98%;
+  padding: 20px;
+  box-shadow: 0 0 15px 0 rgb(68, 68, 68);
+  border: 1px solid rgb(31, 31, 31);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  overflow-y: scroll;
+  gap: 10px;
+}
+
+.inputs {
+  width: 400px;
+  height: 50px;
+  background-color: #272727;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 0 rgb(68, 68, 68);
+  border: 1px solid rgb(31, 31, 31);
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.submit {
+  border: none;
+  background-color: #222222;
+  cursor: pointer;
+  top: -70px;
+  right: 28%;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 0 rgb(68, 68, 68);
+  border: 1px solid rgb(31, 31, 31);
+  width: 600px;
+  padding: 10px;
+}
+
+.user {
+  padding: 10px 20px;
+  text-align: right;
+  border-radius: 20px;
+  background-color: seagreen;
+  min-width: 200px;
+  position: relative;
+  margin-top: auto;
+}
+.user_edit {
+  padding: 10px 20px;
+  text-align: right;
+  border-radius: 20px;
+  background-color: teal;
+  min-width: 200px;
+  position: relative;
+  margin-top: auto;
+}
+.user_delete {
+  padding: 10px 20px;
+  text-align: right;
+  border-radius: 20px;
+  background-color: brown;
+  min-width: 200px;
+  position: relative;
+  margin-top: auto;
+}
+
+.username {
+  font-size: 25px;
+}
+.usersurname {
+  font-size: 20px;
+}
+.userage {
+  font-size: 15px;
+}
+
+.todo_box {
+  position: relative;
+}
+
+.animation_box {
+  display: flex;
+  align-items: center;
+}
+
+.animation1,
+.animation2,
+.animation3 {
+  width: 405px;
+  height: 50px;
+  background-color: #272727;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 0 rgb(68, 68, 68);
+  border: 1px solid rgb(31, 31, 31);
+  color: #fff;
+  padding: 10px;
+  margin-right: 22px;
+  position: absolute;
+}
+
+.animation1,
+.animation2,
+.animation3 {
+  top: 87%;
+}
+.animation1 {
+  right: 0%;
+  animation-name: a1;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1000;
+}
+.animation2 {
+  right: 33%;
+  animation-name: a2;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1000;
+}
+.animation3 {
+  right: 66%;
+  animation-name: a3;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1000;
+}
+
+@keyframes a1 {
+  0% {
+    width: 405px;
+  }
+  100% {
+    box-shadow: none;
+    border: none;
+    width: 205px;
+    height: 50px;
+    top: 65%;
+    right: 2%;
+    background-color: seagreen;
+    border-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+}
+@keyframes a2 {
+  0% {
+    width: 405px;
+  }
+  100% {
+    box-shadow: none;
+    border: none;
+    border-radius: 0px;
+    width: 205px;
+    height: 50px;
+    top: 57%;
+    right: 2%;
+    background-color: seagreen;
+  }
+}
+@keyframes a3 {
+  0% {
+    width: 405px;
+  }
+  100% {
+    box-shadow: none;
+    border: none;
+    width: 205px;
+    height: 50px;
+    top: 49%;
+    right: 2%;
+    background-color: seagreen;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+.edit{
+  background-repeat: no-repeat;
+  background-image: url('./imgs/edit.svg');
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: -15%;
+  top: 20px;
+}
+.delete{
+  background-repeat: no-repeat;
+  background-image: url('./imgs/delete.svg');
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: -15%;
+  top: 60%;
+}
